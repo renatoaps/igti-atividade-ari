@@ -23,4 +23,4 @@ Elabore uma lista de ações práticas que precisariam ser executadas para a mig
 >
 > Particionamento do banco de dados para a solução;
 >
-> Utilizando o editor do SWAGGER (https://editor.swagger.io/), crie a >especificação dos microsserviços a serem implementados na solução em um >estilo arquitetural de microsserviços;
+> Utilizando o editor do SWAGGER (https://editor.swagger.io/), crie a especificação dos microsserviços a serem implementados na solução em um estilo arquitetural de microsserviços;
