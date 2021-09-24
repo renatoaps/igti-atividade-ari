@@ -68,6 +68,22 @@ Caso todos os requisitos sejam atendidos, a esteira utilizando `Jenkins` irá fa
 
 Deve ser utilizada as mais boas práticas atuais de desenvolvimento, através de `clean code` com padrões como `Domain Driven Development` (afinal vamos utilizar separações por dominio, faz total sentido), `S.O.L.I.D` e ir implementando mais `patterns` após o time adquirir mais maturidade com os primeiros `patterns` propostos.
 
+##### Particionamento de Domínio e Banco de dados
+
+Cada domínio deve ser separado de forma coesa.
+
+A princípio teremos 3 domínios pré-estabelecidos, `Clientes`, `Faturas` e `Instalações`.
+Todas as operações serão separadas e implementadas em cada domínio, por exemplo:
+
+Clientes
+
+* /v1/clientes
+* /v1/clientes/{cpf}
+
+Se algum domínio precisar de uma informação que se encontra em outro, um microsservice *não* deve consultar outro microsservice diretamente, para isso deve ser utilizado um `ESB` ou `lib`, citando exemplo do `Apache Camel`(lib Java) baseada em `EIP - Enterprise Integration Patterns`, realizando um trabalho de orquestração para puxar as informações de onde elas forem necessárias.
+
+Cada `Dominio` deve ter seu banco de dados, e um`microsservice` conectar nele para realizar as operações necessárias, salvo exceção de quando ele não precisar de um. Por exemplo, um microsservice criado para processar uma informação recebida e gerar um boleto (não precisa persistir os dados, apenas transformar o content/mime type).
+
 ### Especificação dos microsserviços
 
 > Utilizando o editor do SWAGGER (https://editor.swagger.io/), crie a especificação dos microsserviços a serem implementados na solução em um estilo arquitetural de microsserviços;
