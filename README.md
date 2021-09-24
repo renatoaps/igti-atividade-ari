@@ -65,5 +65,8 @@ Caso todos os requisitos sejam atendidos, a esteira utilizando `Jenkins` irá fa
 
 > i -  Particionamento do banco de dados para a solução;
 
+##### Princípios de design
+
+Deve ser utilizada as mais boas práticas atuais de desenvolvimento, através de `clean code` com padrões como `Domain Driven Development` (afinal vamos utilizar separações por dominio, faz total sentido), `S.O.L.I.D` e ir implementando mais `patterns` após o time adquirir mais maturidade com os primeiros `patterns` propostos.
 
 > Utilizando o editor do SWAGGER (https://editor.swagger.io/), crie a especificação dos microsserviços a serem implementados na solução em um estilo arquitetural de microsserviços;
