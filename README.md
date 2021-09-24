@@ -1,5 +1,4 @@
 # Refatorando em Microsserviços
-
 ```
 O aluno deverá desempenhar as seguintes atividades:
 Você foi contratado como Arquiteto de Integração de Software pelo gerente de tecnologia (TI) da empresa Acme Producer (AP).
@@ -68,5 +67,7 @@ Caso todos os requisitos sejam atendidos, a esteira utilizando `Jenkins` irá fa
 ##### Princípios de design
 
 Deve ser utilizada as mais boas práticas atuais de desenvolvimento, através de `clean code` com padrões como `Domain Driven Development` (afinal vamos utilizar separações por dominio, faz total sentido), `S.O.L.I.D` e ir implementando mais `patterns` após o time adquirir mais maturidade com os primeiros `patterns` propostos.
+
+### Especificação dos microsserviços
 
 > Utilizando o editor do SWAGGER (https://editor.swagger.io/), crie a especificação dos microsserviços a serem implementados na solução em um estilo arquitetural de microsserviços;
