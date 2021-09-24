@@ -93,7 +93,7 @@ O contrato também pode ser encontrado [aqui.](https://github.com/renatoaps/igti
 <details>
   <summary>microsservices.yaml</summary>
   
-```
+```#yaml
   swagger: "2.0"
 info:
   version: "1.0.0"
